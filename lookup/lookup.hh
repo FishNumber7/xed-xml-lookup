@@ -1,7 +1,11 @@
 #ifndef LOOKUP_XED_HH
 #define LOOKUP_XED_HH
 
-const char* decode(unsigned char itext[15]);
+#include <iostream>
+
+void initialize_xed();
+
+std::string decode(unsigned char itext[15]);
 
 const char* lookup(unsigned char itext[15], const char* architecture);
 
